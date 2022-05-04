@@ -1,0 +1,31 @@
+.feed-form {
+    display: flex;
+    margin-top: 36px;
+    flex-direction: column;
+    width: 300px;
+    input {
+        height: 50px;
+        background-color: #fff;
+        color: #111111;
+        border-radius: 5px;
+        border: none;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
+        &:hover {
+            background-color: rgba(189, 43, 43, 0.4);
+            
+        &:valid {
+            background-color: rgba(43, 189, 43, 0.4);
+            }
+        }
+    }
+    &_mt25 {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}
