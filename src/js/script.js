@@ -124,13 +124,13 @@ function toggleSlide(item) {
 	});
 	//Smooth scroll up
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 1600) {
+		if ($(this).scrollTop() > 1200) {
 			$('.pageup').fadeIn();
 		} else {
 			$('.pageup').fadeOut();
 		}
 	});
-	/*Библиотека для работы анимации (Показывайте 
+	/*Библиотека для работы анимации (Показывает 
 	анимацию CSS при прокрутке страницы вниз).*/
 	var WOW;
 	new WOW().init();

@@ -102,7 +102,10 @@
 			margin-top: 40px;
 		}
 		&-item {
-			box-shadow: none;
+			&:hover {
+				box-shadow: none;
+				transform: none;
+			}
 		}
 	}
 	.comment {
@@ -167,6 +170,10 @@
 			margin: 0;
 			border-color: $main-color;
 			background: $main-color;
+			&:hover {
+				box-shadow: none;
+
+			}
 			img {
 				height: 70%;
 				background: $main-color;

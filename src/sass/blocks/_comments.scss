@@ -36,8 +36,53 @@
 		font-weight: 300;
 		line-height: normal;
 		text-align: left;
-   	}
-	hr {
+   	}	
+	&__underline {
+		height: 1px;
 		margin: 50px 0 50px 0;
-	}	
+		background-color: rgba(78, 77, 77, 0.601);
+		&_1 {
+			&:before {
+				content: '';
+				display: block;
+				position: relative;
+				width: 10px;
+				height: 10px;
+				border-radius: 100%;
+				background-color: $main-color;
+				animation:  circleWayOnRight linear 1.2s;
+				animation-fill-mode: forwards;
+				bottom: 5px;
+			}
+			animation: lineFadeOnRight linear 1.2s;		
+			animation-fill-mode: forwards;
+		}
+		&_2 {
+			&:before {
+				content: '';
+				display: block;
+				position: relative;
+				width: 10px;
+				height: 10px;
+				border-radius: 100%;
+				background-color: $main-color;
+				animation:  circleWayOnLeft linear 1.2s;
+				animation-fill-mode: forwards;
+				bottom: 5px;
+			}
+			&:after {
+				content: '';
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 2px;
+				background-color: white;
+				animation:  fadeOnLeft linear 1.2s;
+				animation-fill-mode: forwards;
+				bottom: 10px;
+			}
+			animation-fill-mode: forwards;
+			width: 100%;
+		}
+	}
 }

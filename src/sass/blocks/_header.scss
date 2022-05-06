@@ -3,7 +3,10 @@
     justify-content: space-between;
     align-items: center;
     &__logo {
-        width: 250px;
+        right: 0px;
+        position: relative;
+        animation-fill-mode: forwards;
+        animation: headerLogo 3s;
         img {
             width: 100%;
         }

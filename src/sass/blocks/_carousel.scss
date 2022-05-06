@@ -12,8 +12,6 @@
 		background: none;
 		top: 50%;
 		transform: translateY(-50%);
-		// left: -50px;
-		// z-index: 2;
 		&:hover {
 			border-radius: 5px;
 			outline: 3px;
@@ -24,7 +22,7 @@
 			max-width: 100%;
 		}
 	}
-	.next {
+	.prev {
 		right: 10px;
 	}
 	.tns-item {
