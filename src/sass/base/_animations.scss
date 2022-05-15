@@ -5,20 +5,24 @@
 }
 @keyframes lineFadeOnRight {
     0% {width: 0;}
-    100% {width: 99%;}
+    100% {width: 100%;}
 }
 @keyframes circleWayOnRight {
     0% {left: 0%;}
     100% {left: 100%;}
 }
-@keyframes circleWayOnLeft {
-    0% {left: 100%;}
-    100% {left: 0%;}
-}
-@keyframes fadeOnLeft {
+@keyframes lineFadeOnLeft {
     0% {width: 100%;}
     100% {width: 0%;}
 }
+@keyframes circleWayOnLeft {
+    0% {left: 100%;}
+    100% {left: calc(0% + 100%);}
+}
+// @keyframes fadeOnLeft {
+//     0% {width: 100%;}
+//     100% {width: 0%;}
+// }
 @keyframes headerLogo {
     0% {right: 800px;}
     0% {transform: skewX(80deg);}
