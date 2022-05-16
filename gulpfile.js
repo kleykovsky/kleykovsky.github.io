@@ -22,7 +22,7 @@ gulp.task('styles', function() {
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer({cascade: false}))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("dist/css"))    //dist
+        .pipe(gulp.dest("dist/css"))  //dist
         .pipe(browserSync.stream());
 });
 gulp.task('watch', function() {
